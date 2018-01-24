@@ -1,15 +1,16 @@
 package com.example.customer;
 
+import java.util.Collections;
+
 import com.example.customer.tracing.HttpHeaderForwarderClientHttpRequestInterceptor;
 import com.example.customer.tracing.HttpHeaderForwarderHandlerInterceptor;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-
-import java.util.Collections;
 
 @SpringBootApplication
 public class CustomerApplication extends WebMvcConfigurerAdapter {

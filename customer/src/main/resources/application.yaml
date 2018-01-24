@@ -1,0 +1,13 @@
+ribbon:
+  eureka:
+    enabled: false
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
+
+preferences.api.url: http://preferences:8080
